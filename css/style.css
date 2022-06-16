@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'poppins';
+}
+
+.container {
+    background-image: url(/images/bg-intro-desktop.png);background-color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    color: white;
+    width: 49%;
+}
+
+h1 {
+    font-weight: 700px;
+    font-size: 45px;
+    width: 55%;
+}
+
+.pgraph {
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+}
+
+form {
+    width: 79%;
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.offer {
+    margin-bottom: 1rem;
+    width: 79%; 
+    border-radius: 10px;    
+}
+.offer span {
+    font-weight: 500;
+    color: white;
+}
+.offer p {
+    padding: 22px;
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+ }    
+
+fieldset {
+    border: none;
+}
+
+input {
+    display: block;
+    padding: 17px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin: 1em auto; 
+      
+}
+
+form button {
+    padding: 17px;
+    width: 87%;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 8px;
+    color: white;
+    border: none;
+}
+
+p span{
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+    font-size: small;
+}
+
+p {
+    color: hsl(246, 25%, 77%);
+    font-size: small;
+}
+
+
+/*media query*/
+@media (max-width:375px) {
+     .container {
+        flex-direction: column;
+     }
+     .offer {
+        margin: 0 auto;
+        margin-bottom: 0.7em ;
+     }
+     form {
+        margin: 0 auto;
+     }
+     form p {
+        margin-top: 1em ;
+     }
+     header {
+        width: 100%;
+     }
+     h1 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+        width: 87%;
+     }
+     .pgraph {
+        margin-top: 1em;
+        font-size: 15px;
+        text-align: center;
+     }
+}
